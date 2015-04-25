@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The CodeBook
 
 All transformations of the data are described in the script, which merges a number of files to create the single tidy dataset. Please read the README.md file in this repository for the project description.
@@ -12,6 +11,4 @@ Please read the README.txt file in the downloaded content for a description of t
 *correctFeatureName*: This function removes unwanted parentheses to create a tidier data frame. 
 
 The remaining functions within the script merge the individual datasets to create the required tidy dataset.
-=======
 
->>>>>>> 2dd8a4c916ab695205640fec89f34a26964cd10f
