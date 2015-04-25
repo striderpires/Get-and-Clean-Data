@@ -24,17 +24,16 @@ rAdditionalFile <- function(dataDirectory, fPath) {
         data
 }
 
-# Correct a feature name - makes it nicer for dataframe columns (removes parentheses)
-# because otherwise they are transformed to dots.
-# * featureName: name of the feature
+# Correcting feature names - Removes parentheses for a tidier dataframe layout
+# * featureName = name of the feature
 correctFeatureName <- function(featureName) {
         featureName <- gsub("\\(", "", featureName)
         featureName <- gsub("\\)", "", featureName)
         featureName
 }
 
-# Read sets and returns a complete sets
-# * dataDirectory: directory of data
+# Read sets, returning a complete set
+# * dataDirectory = directory of data
 readSets <- function(dataDirectory) {
         # Adding main data files (X_train and X_test)
         featuresFilePath <- paste(dataDirectory, "/features.txt", sep="")
